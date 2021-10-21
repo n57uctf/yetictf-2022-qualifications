@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}PDF Reverser{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+  <img src="{{ url_for('static', filename='pdf-img.png') }}" width="135" height="200">
+</div>
+  <div class="container text-center mt-5 mb-5">
+    <form method="post" action="" enctype="multipart/form-data">
+      <div class="input-group mb-3">
+        <span class="input-group-text"><b>Attach your pdf:    </b></span>
+        <input type="file" class="form-control" name="file">
+        <input type="submit" class="btn btn-dark" value="Submit">
+      </div>
+      
+    </form>
+  </div>
+
+
+{% if filename %}
+<div class="d-flex justify-content-center">
+<a href="{{url_for('download_file', name=filename)}}" class="container text-center mb-5 btn btn-success" style="width: 300px; height: 50px; padding: auto;">
+  <p class="h3">Download</p>
+</a>
+</div>
+{% endif %}
+{% if pdf_version or page_count or metadata or filename%}
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          PDF Version
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        {{ pdf_version }}  
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Page count
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        {{ page_count }}  
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          PDF metadata
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        {{ metadata }}  
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+   
+
+
+
+{% endblock %}

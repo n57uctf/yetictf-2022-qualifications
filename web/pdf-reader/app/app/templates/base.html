@@ -1,0 +1,36 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - PDF Reverser</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+<section class="container">
+  <header class="container text-center">
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+<div class="container text-center">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            {% if category == "error" %}
+          <div class="alert alert-danger">
+            <em>{{ message }}</em>
+          </div>
+            {% endif %}
+            {% if category == "success" %}
+          <div class="alert alert-success">
+            <em>{{ message }}</em>
+          </div>
+            {% endif %}
+            {% if category == "warning" %}
+          <div class="alert alert-warning">
+            <em>{{ message }}</em>
+          </div>
+            {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+</div>
+</section>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
