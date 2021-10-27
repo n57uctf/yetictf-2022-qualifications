@@ -42,10 +42,26 @@ void getFlag() {
     free(buffer);
 }
 
+void helper(char& data) {
+    printf("%s", "Welcome to the help function!\n");
+    printf("%s","Here you can change the value of your password entry!\n");
+
+    printf("Give me your password: ");
+    std::cin.getline(&data, 38, '\n');
+    
+    if (std::cin.fail()) {
+        std::cin.clear();
+        std::cin.ignore(32767,'\n');
+    }
+    else {
+        std::cout << "Your input has changed successfully\n";
+    }
+
+}
 
 
 int main() {
-
+    int help = 0;
     char* user_input = new char[38];
     char* password = new char[38]; 
 
@@ -59,11 +75,20 @@ int main() {
             password[i] = static_cast<char>(getRandomNumber(32,126));
         }
 
-        printf("Hello, welcome to YetiCTF !\nI hope, that u remember your password,\ncoz him very HARD!\n");
+        printf("Hello, welcome to YetiCTF !\nI hope, that u remember your password,\ncoz him is very HARD!\n");
         printf("Good luck, have fun!\n");
 
         printf("Give me your HARD password: ");
         std::cin.getline(user_input, 38, '\n');
+
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(32767,'\n');
+            printf("%s","Its not pwn!\nJust try again!\n\n");
+            continue;
+        }
+        else 
+            printf("%s", "Successfully input!\n");
 
         for (int k(0); k<38; k++) {
             if ((int)user_input[k] > 32 && (int)user_input[k] < 126) {
@@ -81,6 +106,10 @@ int main() {
                 continue;
         }
 
+        if (help) {
+            helper(*user_input);
+        }
+
         for (int res(0); res<38; res++)
             if (password[res] == user_input[res])
                 counter++;
@@ -95,18 +124,25 @@ int main() {
 
             std::cin >> choise;
 
+            if (std::cin.fail()) {
+                std::cin.clear();
+                std::cin.ignore(32767,'\n');
+                std::cout << "Failed choise!\nContinuing..\n";
+                continue;
+            }
+
             if (choise == 'F' || choise == 'f')
                 break;
             continue;
         }
-        else if (counter == 37) {
+        else if (counter == 37 && password==user_input) {
             getFlag();
             break;
         }
     }
 
-    free(user_input);
-    free(password);
+    delete[] user_input;
+    delete[] password;
 
     return 0;
 }
