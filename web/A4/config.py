@@ -1,0 +1,1 @@
+SECRET = {"KEY": "YetiCTF{ne_lublu_minecraft}"}
