@@ -17,42 +17,42 @@ static int8_t get_file_data(
 	FILE * f = fopen(fname, "rb");
 	if (NULL == f)
 	{
-		MSG_ERR("<%s> fopen(%s) failed: %s", __func__, fname, strerror(errno));
+		MSG_ERR("<%s> fopen(%s) failed: %s\n", __func__, fname, strerror(errno));
 		goto exit;
 	}
 
 	int rc = fseek(f, 0, SEEK_END);
 	if (-1 == rc)
 	{
-		MSG_ERR("<%s:%d> fseek() failed: %s", __func__, __LINE__, strerror(errno));
+		MSG_ERR("<%s:%d> fseek() failed: %s\n", __func__, __LINE__, strerror(errno));
 		goto exit;
 	}
 
 	fdata->size = ftell(f);
 	if (0 == fdata->size)
 	{
-		MSG_ERR("<%s> ftell() failed: %s", __func__, strerror(errno));
+		MSG_ERR("<%s> ftell() failed: %s\n", __func__, strerror(errno));
 		goto exit;
 	}
 
 	rc = fseek(f, 0, SEEK_SET);
 	if (-1 == rc)
 	{
-		MSG_ERR("<%s:%d> fseek() failed: %s", __func__, __LINE__, strerror(errno));
+		MSG_ERR("<%s:%d> fseek() failed: %s\n", __func__, __LINE__, strerror(errno));
 		goto exit;
 	}
 
 	fdata->data = malloc(fdata->size);
 	if (NULL == fdata->data)
 	{
-		MSG_ERR("<%s> malloc() failed: %s", __func__, strerror(errno));
+		MSG_ERR("<%s> malloc() failed: %s\n", __func__, strerror(errno));
 		goto exit;
 	}
 
 	rc = fread(fdata->data, sizeof(uint8_t), fdata->size, f);
 	if ((rc <= 0) || (rc > fdata->size))
 	{
-		MSG_ERR("<%s> fread() failed: %s", __func__, strerror(errno));
+		MSG_ERR("<%s> fread() failed: %s\n", __func__, strerror(errno));
 		goto exit;
 	}
 
@@ -108,7 +108,7 @@ static int8_t send_flag_part(
 	// overflow
 	if (ptr > last_ptr)
 	{
-		MSG_ERR("<%s> Pointer is shit (%p|%p)", __func__, ptr, last_ptr);
+		MSG_ERR("<%s> Pointer is shit (%p|%p)\n", __func__, ptr, last_ptr);
 		return -1;
 	}
 	// if last block
@@ -151,7 +151,7 @@ static int8_t start_game(
 			}
 			else if (-1 == rc)
 			{
-				MSG_ERR("<%s> send_flag_part() failed", __func__);
+				MSG_ERR("<%s> send_flag_part() failed\n", __func__);
 				return -1;
 			}
 
@@ -175,7 +175,7 @@ int main(int argc, char ** argv)
 	int8_t rc = get_file_data(FLAG_FILE, &flag);
 	if (-1 == rc)
 	{
-		MSG_ERR_MAIN("<%s:%d> get_file_data() failed", __func__, __LINE__);
+		MSG_ERR_MAIN();
 		goto exit;
 	}
 
@@ -184,14 +184,14 @@ int main(int argc, char ** argv)
 	rc = get_file_data(ELF_BINARY, &elf_base);
 	if (-1 == rc)
 	{
-		MSG_ERR_MAIN("<%s:%d> get_file_data() failed", __func__, __LINE__);
+		MSG_ERR_MAIN();
 		goto exit;
 	}
 
 	rc = start_game(&flag, &elf_base);
 	if (-1 == rc)
 	{
-		MSG_ERR_MAIN("<%s> start_game() failed", __func__);
+		MSG_ERR_MAIN();
 		goto exit;
 	}
 

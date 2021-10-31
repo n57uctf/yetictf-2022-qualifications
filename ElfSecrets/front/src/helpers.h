@@ -4,7 +4,9 @@
 #define BUFSIZE  1024
 #define ELF_SIZE 238
 
-#define SERVER_ADDRESS "0.0.0.0"
+#define SERVER_ADDRESS "217.71.129.185"
+//#define SERVER_ADDRESS "0.0.0.0"
+
 #define SERVER_PORT    8888
 
 #define INCORRECT_ANSVER "incorrect"

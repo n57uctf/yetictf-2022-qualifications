@@ -28,31 +28,11 @@
 #endif // IN_DOCKER
 
 #define SEND_DATA(__data__, __size__) write(1, __data__, __size__)
+#define READ_SECRET(__buf__)          read(0, __buf__, sizeof(uint32_t))
 
-#define READ_SECRET(__buf__) read(0, __buf__, sizeof(uint32_t))
-
-// problems with stdout in docker
-#define MSG_INFO(__fmt__, ...) \
-	do \
-	{ \
-		fprintf(stderr, __fmt__, ##__VA_ARGS__); \
-	} while(0)
-
-#define MSG_ERR(__fmt__, ...) \
-	do \
-	{ \
-		fprintf(stderr, "[Error] - "); \
-		fprintf(stderr, __fmt__, ##__VA_ARGS__); \
-		fprintf(stderr, "\n"); \
-	} while(0)
-
-#define MSG_ERR_MAIN(__fmt__, ...) \
-	do \
-	{ \
-		fprintf(stderr, "[Error] - "); \
-		fprintf(stderr, __fmt__, ##__VA_ARGS__); \
-		fprintf(stderr, "\nPlease, send error log to @bigger777\n"); \
-	} while(0)
+#define MSG_INFO(__fmt__, ...) printf(__fmt__, ##__VA_ARGS__)
+#define MSG_ERR(__fmt__, ...)  fprintf(stderr, __fmt__, ##__VA_ARGS__)
+#define MSG_ERR_MAIN()         printf("\nPlease, send error log to @bigger777\n");
 
 typedef struct file
 {
