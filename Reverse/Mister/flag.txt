@@ -1,0 +1,1 @@
+YetiCTF{template class SimpleCalculator<double>}
