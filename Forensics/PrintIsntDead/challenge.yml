@@ -1,0 +1,34 @@
+# Required sections
+name: "PrintIsntDead"
+author: "RegularITCat"
+category: forensics
+description: "Всё просто: ты, дамп трафика и конфиденциональная информация. Добро пожаловать!"
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{Fr3n4c0nn3ct10n}
+
+topics:
+    - Forensics
+    - PCAP
+    - Network
+    - Printer
+
+tags:
+    - forensics
+
+files:
+    - files/prntsndd.pcap
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"

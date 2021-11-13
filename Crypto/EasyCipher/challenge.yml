@@ -1,0 +1,39 @@
+# Required sections
+name: "EasyCipher"
+author: "Larr1"
+category: crypto
+description: "Что то очень знакомое... Думаю, ты справишься без моих подсказок)"
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{Show_must_go_on}
+
+topics:
+    - Crypto
+    - Base
+
+tags:
+    - crypto
+    - easy
+
+files:
+    - files/flag.txt
+
+hints:
+    - {
+        content: "Yalo! +1 point for Grifindor",
+        cost: -1
+    }
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"

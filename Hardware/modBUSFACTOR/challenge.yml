@@ -1,0 +1,50 @@
+# Required sections
+name: "modBUSFACTOR"
+author: "RegularITCat"
+category: hardware
+description: "Привет хакер! Я тут ковырял один заводик, нашел интересный узел, прокинул тебе. Прочекаешь, может удастся собрать инфы?"
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{c00l3r_7h4n_57uxn37_br0}
+
+image: ./src/
+host: ssh://root@proxy.leito.tech
+
+# connection_info: nc proxy.leito.tech 502 
+
+hints:
+    - {
+        content: "Хммм... 502 порт? Где-то я это уже видел.",
+        cost: 10
+    }
+    - {
+        content: "Точняк, это стандартный порт modbus'а, известного промышленного протокола! Походу этот узел, это какой-то контроллер...",
+        cost: 20
+    }
+    - {
+        content: "Давай поenum'им какой-нибудь простой операцией, авось что и вытащим.",
+        cost: 30
+    }
+    
+topics:
+    - Hardware
+    - ModBus
+    - ICS
+    - SCADA
+
+tags:
+    - hardware
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"

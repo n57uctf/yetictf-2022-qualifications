@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y cron
 RUN chmod +x ./gunicorn.sh
 RUN mkdir /tmp/pdfcache
 RUN crontab cleaner.cron
+EXPOSE 8443
 RUN echo "YetiCTF{1eV3l_ulTRa_H4ck3r}" > /flag.txt
 
 ENTRYPOINT ["./gunicorn.sh"]

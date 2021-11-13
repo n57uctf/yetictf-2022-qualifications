@@ -1,0 +1,48 @@
+# Required sections
+name: "Jokester"
+author: ""
+category: web
+description: "Мой друг долго не мог понять, что не так с pdf'кой с того сайта. АХАХАХ<br>/flag.txt"
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{1eV3l_ulTRa_H4ck3r}
+
+image: .
+host: ssh://root@proxy.leito.tech
+
+# connection_info: nc proxy.leito.tech 502 
+
+hints:
+    - {
+        content: "Где храниться метаданные в pdf файлах?",
+        cost: 10
+    }
+    - {
+        content: "Что за сущность такая?",
+        cost: 20
+    }
+    - {
+        content: "xmp -> xxe",
+        cost: 30
+    }
+    
+topics:
+    - Web
+    - XXE
+
+tags:
+    - web
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"

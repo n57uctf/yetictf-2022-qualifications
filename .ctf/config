@@ -1,0 +1,12 @@
+[config]
+url = https://yetictf.nstu.ru
+access_token = 
+
+[challenges]
+Crypto/EasyCipher = Crypto/EasyCipher
+Forensics/PrintIsntDead = Forensics/PrintIsntDead
+Forensics/SecureSocketLetter = Forensics/SecureSocketLetter
+Hardware/162 = Hardware/162
+Hardware/circuitry = Hardware/circuitry
+Hardware/modBUSFACTOR = Hardware/modBUSFACTOR
+

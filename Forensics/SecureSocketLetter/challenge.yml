@@ -1,0 +1,36 @@
+# Required sections
+name: "SecureSocketLetter"
+author: "RegularITCat"
+category: forensics
+description: "Этот парень был уверен в защищенности SSL..."
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{deAm1g0deCa7te1}
+
+topics:
+    - Forensics
+    - PCAP
+    - Network
+    - Crypto
+    - SSL
+
+tags:
+    - forensics
+    - crypto
+
+files:
+    - files/sslett.pcap
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"
