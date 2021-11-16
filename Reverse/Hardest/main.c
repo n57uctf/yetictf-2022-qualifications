@@ -101,7 +101,7 @@ int main()
 			exit(-1);
 		}
 
-		if (!memcmp(user_input, password, sizeof(user_input)))
+		if (!memcmp(user_input, password, sizeof(user_input) - 1))
 		{
 			getFlag();
 			return 0;
