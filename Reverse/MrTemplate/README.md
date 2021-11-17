@@ -9,6 +9,6 @@
 Compile: g++ -Wall -Wextra -Wpedantic main.cpp -o output<br>
 <br>
 флаг представляет собой одну дописанную строчку<br>
-EXAMPLE: YetiCTF{void SimpleCalculator<T>::setNum2(T num)}
+EXAMPLE: YetiCTF{void SimpleCalculator<T>::setNum2(T num);}
 
 Добавлять только файлы .h, .cpp
