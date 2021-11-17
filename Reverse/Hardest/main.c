@@ -15,17 +15,21 @@ uint8_t getRandomNumber(uint8_t min, uint8_t max) {
 }
 
 // YetiCTF{th3_h4rd35t_r3v3r53_1n_th3_w0rld}
-uint32_t offsets[] = {0x2092, 0x2093, 0x2094, 0x2095, 0x2096, 0x2097, 0x03, 0x34f8, // YetiCTF{
-                      0x23a, 0x458, 0x21f9, 0x36e1,                                 // th3_
-                      0x37fe, 0x31d, 0x66f, 0x672, 0x21f9, 0x1021, 0x2094, 0x36e1,  // h4rd35t_
-                      0x66f, 0x21f9, 0x15fe, 0x21f9, 0x66f, 0x1021, 0x21f9, 0x36e1, // r3v3r53_
-                      0x1629, 0x324, 0x36e1,                                        // 1n_
-                      0x2094, 0x458, 0x21f9, 0x36e1,                                // th3_
-                      0x1385, 0x22b7, 0x66f, 0x319, 0x672, 0x440, 0xd1};            // w0rld}\n
+uint32_t offsets[] = {0x2092, 0x2093, 0x2094, 0x2095, 0x2096, 0x2097, 0x0003, 0x30c8, // YetiCTF{
+                      0x023a, 0x0208, 0x21f9, 0x069e,                                 // th3_
+                      0x0208, 0x032d, 0x0687, 0x023b, 0x21f9, 0x1021, 0x2094, 0x069e, // h4rd35t_
+                      0x0687, 0x21f9, 0x0668, 0x21f9, 0x0687, 0x1021, 0x21f9, 0x069e, // r3v3r53_
+                      0x10eb, 0x0324, 0x069e,                                         // 1n_
+                      0x023a, 0x0208, 0x21f9, 0x69e,                                  // th3_
+                      0x13a5, 0x01a0, 0x0687, 0x031f, 0x0672, 0x0320, 0x458, 0x7b};   // w0rld}\n
+
+#define OFFSETS_SIZE sizeof(offsets)/sizeof(offsets[0]) - 1
 
 void getFlag()
 {
 	int rcode = -1;
+
+	uint8_t * data = NULL;
 
 	FILE * f = fopen(HARDEST_PATH, "rb");
 	if (!f)
@@ -55,7 +59,7 @@ void getFlag()
 		goto error;
 	}
 
-	uint8_t * data = malloc(size);
+	data = malloc(size);
 	if (!data)
 	{
 		fprintf(stderr, "malloc() failed: %s\n", strerror(errno));
@@ -69,10 +73,11 @@ void getFlag()
 		goto error;
 	}
 
-	for (int i = 0; i < sizeof(offsets); i++)
+	for (int i = 0; i < OFFSETS_SIZE; i++)
 		printf("%c", data[offsets[i]]);
 
 error:
+	free(data);
 	fclose(f);
 }
 
