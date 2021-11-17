@@ -9,7 +9,7 @@ class SimpleCalculator {
     T m_num1;
     T m_num2;
     T m_result;
-    char* object_name = new char[256];
+    char* object_name;
 
 public:
 
