@@ -15,4 +15,5 @@ Web/Cookie/ = Web/Cookie/
 OSINT/A.K.Doyle/ = OSINT/A.K.Doyle/
 OSINT/BobaLover/ = OSINT/BobaLover/
 OSINT/LeakedPassword/ = OSINT/LeakedPassword/
+Crypto/BlackBox/ = Crypto/BlackBox/
 

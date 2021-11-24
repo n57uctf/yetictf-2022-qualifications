@@ -1,0 +1,22 @@
+name: "BlackBox"
+author: "@Larr1"
+category: crypto
+description: "@Larr1<br>Предлагаю тебе сыграть в 1 математическую игру. Думаю, она тебе непонравиться.<br>Твоя задача отгадать несколько чисел. Подробности узнаешь в самой игре. Удачи!"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{Ass3mbl3r_1s_the_b3st_Lang}
+
+image: .
+host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: nc yetictf.nstu.ru 1117
+
+state: hidden
+
+version: "0.1"

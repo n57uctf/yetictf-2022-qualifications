@@ -1,3 +1,0 @@
-times==0.0.7
-socket>=2.7
-threaded>=3.6.0
