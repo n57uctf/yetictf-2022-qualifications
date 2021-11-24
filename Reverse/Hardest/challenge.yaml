@@ -1,0 +1,24 @@
+name: "Hardest"
+
+author: "@myNameIsK1r4"
+
+category: Reverse
+
+description: "Угадай пароль и получи флаг!"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+files:
+    - files/hardest
+
+flags:
+    - YetiCTF{th3_h4rd35t_r3v3r53_1n_th3_w0rld}
+
+
+version: "0.1"

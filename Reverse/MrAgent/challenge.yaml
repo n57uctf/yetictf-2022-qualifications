@@ -1,0 +1,24 @@
+name: "MrAgent"
+
+author: "@bigger777"
+
+category: Reverse
+
+description: "Наш вирусолог по ошибке запустил один из своих экземпляров на своей системе. Помоги бедолаге вернуть его труды."
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+files:
+    - files/MrAgent
+    - files/dump.img.7z
+
+flags:
+    - YetiCTF{mr_4g3nt_l1k3_h15_z00}
+
+version: "0.1"

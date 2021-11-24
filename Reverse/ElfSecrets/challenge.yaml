@@ -1,0 +1,27 @@
+name: "Elf's secret"
+
+author: "@bigger777"
+
+category: Reverse
+
+description: "Разгадай секрет эльфов"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: .
+
+host: ssh://cloud-admin@yetictf.nstu.ru
+
+files:
+    - files/front
+
+flags:
+    - YetiCTF{1_l1k3_pl4y_w1th_t1ny_3lf5}
+
+version: "0.1"
