@@ -9,4 +9,7 @@ Forensics/SecureSocketLetter = Forensics/SecureSocketLetter
 Hardware/162 = Hardware/162
 Hardware/circuitry = Hardware/circuitry
 Hardware/modBUSFACTOR = Hardware/modBUSFACTOR
+Web/A4/ = Web/A4/
+Web/pdf-reader/ = Web/pdf-reader/
+Web/Cookie/ = Web/Cookie/
 
