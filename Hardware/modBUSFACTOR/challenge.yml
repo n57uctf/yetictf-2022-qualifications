@@ -14,9 +14,8 @@ flags:
     - YetiCTF{c00l3r_7h4n_57uxn37_br0}
 
 image: .
-host: ssh://root@proxy.leito.tech
-
-connection_info: nc proxy.leito.tech 502 
+host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: nc yetictf.nstu.ru 502
 
 hints:
     - {
