@@ -1,0 +1,23 @@
+name: "Boba Lover"
+author: "@phalanger2412"
+category: osint
+description: "@phalanger2412<br>Мне тут птичка одна сказала, что некий ILeOUt любит пробовать различные напитки и постить фото-отчеты в соц сетях."
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+files:
+    - files/img.JPG
+
+flags:
+    - YetiCTF{twitter_i$_b00ringggggg_101}
+
+hints:
+    - "Как оказалось в Твиттер можно искать по хэштегам"
+    - "Возможно стоит попробовать хэштег места, где купили напитки"
+
+version: "0.1"
