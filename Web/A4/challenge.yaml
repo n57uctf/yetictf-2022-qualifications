@@ -1,0 +1,37 @@
+# Это описание твоего таска. Пользуйся
+
+# Обязательно
+name: "A4"
+author: "@exe_cute"
+# Категория (web,crypto,pwn,reverse,...)
+category: web
+# Публичное описание твоего таска в CTFd
+description: "" # !Поменяй
+value: 100
+# Тип таска. dynamic - используются поля снизу. standard - используется значение value сверху
+type: dynamic
+
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Для сервиса
+# . - использовать Dockerfile в этой же директории
+image: .
+# host - куда публиковать Docker-контейнер при ctf challenge deploy
+host: ssh://cloud-admin@yetictf.nstu.ru
+# Инструкции, команды, ссылка на сервис
+connection_info: https://yetictf.nstu.ru:9999/ # !Поменяй
+
+
+# Флаги
+# !Поменяй
+flags:
+    # Static case flag
+    - YetiCTF{ne_lublu_minecraft}
+
+
+# Не трогать
+version: "0.1"
