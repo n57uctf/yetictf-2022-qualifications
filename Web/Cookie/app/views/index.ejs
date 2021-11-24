@@ -1,0 +1,44 @@
+
+<%- include("header/header.ejs") %>
+    <div class="row valign-wrapper modal-block contaner_castom">
+        <div class="col s3 side">
+            <ul class="collapsible popout">
+                <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Установить число</div>
+                <div class="collapsible-body"><span><%= flag %></span></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col s9 main">
+            <div class="card light-blue lighten-5 block_center random">
+
+                <div class="card-content  blue-grey-text">
+
+                    <div class="input-field">
+                        <input id="first" name="first" type="number" class="validate">
+                        <label for="first">First</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="second" name="second" type="number" class="validate">
+                        <label for="second">Second</label>
+                    </div>
+                </div>
+                <div class="card-action blue-grey-text justify-block">
+                    <button id="calculate" class="btn light-blue lighten-2">Войти</button>
+                </div>
+
+            </div>
+            <div class="card light-blue lighten-5 block_center random">
+
+                <div class="card-content  blue-grey-text">
+
+                    <h1 id="random" class="center-align">0</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<html>

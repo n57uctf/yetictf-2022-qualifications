@@ -1,0 +1,19 @@
+.side{
+    height: 100vh;
+    background-color: rgb(144 164 174);
+}
+.main{
+    height: 100vh;
+    background-color:rgb(38 166 154);
+}
+.random{
+    width: 30%;
+    margin: 50px auto;
+}
+
+.contaner_castom{
+    margin-bottom: 0
+}
+.collapsible-body{
+    background-color: aliceblue;
+}

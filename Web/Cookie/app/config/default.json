@@ -1,0 +1,6 @@
+{
+    "PORT":8080,
+    "HOST":"0.0.0.0",
+    "adminUsers": {},
+    "flag": "YetiCTF{D0_u_w4nn4_c00k13s?}"
+}

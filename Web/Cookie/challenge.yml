@@ -1,0 +1,31 @@
+# Required sections
+name: "Cookie"
+author: "@Dinobugaini"
+category: web
+description: "@Dinobugaini<br>"
+value: 100
+type: dynamic
+
+# Optional
+# Поля для dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - YetiCTF{D0_u_w4nn4_c00k13s?}
+
+image: .
+host: ssh://root@proxy.leito.tech
+
+connection_info: https://yetictf.nstu.ru:8080/
+
+
+tags:
+    - web
+
+# hidden, visible.
+state: hidden
+
+version: "0.1"
