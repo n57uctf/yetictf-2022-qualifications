@@ -11,5 +11,5 @@ __Flag__:
 * YetiCTF{ne_lublu_minecraft}
 
 __Deploy__:
-* `docker build -t a4 . && docker run -dp1117:1117 a4`
-* `http://yetictf.nstu.ru:9999/`
+* `docker build -t a4 . && docker run -dp9999:9999 a4`
+* `http://127.0.0.1:9999/`
