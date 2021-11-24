@@ -10,6 +10,9 @@ __Description__:
 __Flag__:
 * YetiCTF{P4WnSacrif1ce}
 
+__Files__:
+* Chess.PNG
+
 __Hints__:
 
 __Deploy__:
