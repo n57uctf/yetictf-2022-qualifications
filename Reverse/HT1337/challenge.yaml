@@ -1,0 +1,25 @@
+name: "HT1337"
+
+author: "@bigger777"
+
+category: Reverse
+
+description: "Нам прислали дампы памяти и документацию к процессору странного устройства. Помоги нам разобраться со всем этим."
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+files:
+    - files/rom.bin
+    - files/ram.bin
+    - files/man.pdf
+
+flags:
+    - YetiCTF{ht1337_n3_t0p}
+
+version: "0.1"
