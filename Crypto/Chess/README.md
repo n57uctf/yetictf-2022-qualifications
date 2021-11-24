@@ -11,7 +11,7 @@ __Flag__:
 * YetiCTF{P4WnSacrif1ce}
 
 __Files__:
-* Chess.PNG
+* Chess.jpg
 
 __Hints__:
 
