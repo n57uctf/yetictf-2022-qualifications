@@ -1,13 +1,10 @@
-# Required sections
 name: "Cookie"
 author: "@Dinobugaini"
 category: web
-description: "@Dinobugaini<br>"
+description: "@Dinobugaini<br>" # TODO
 value: 100
 type: dynamic
 
-# Optional
-# Поля для dynamic
 extra:
     initial: 500
     decay: 100
@@ -17,15 +14,13 @@ flags:
     - YetiCTF{D0_u_w4nn4_c00k13s?}
 
 image: .
-host: ssh://root@proxy.leito.tech
+host: ssh://cloud-admin@yetictf.nstu.ru
 
-connection_info: https://yetictf.nstu.ru:8080/
-
+connection_info: http://yetictf.nstu.ru:8080/
 
 tags:
     - web
 
-# hidden, visible.
 state: hidden
 
 version: "0.1"

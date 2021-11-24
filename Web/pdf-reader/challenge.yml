@@ -1,4 +1,3 @@
-# Required sections
 name: "Jokester"
 author: "@amigo2208"
 category: web
@@ -6,20 +5,17 @@ description: "@amigo2208<br>Мой друг долго не мог понять,
 value: 100
 type: dynamic
 
-# Optional
-# Поля для dynamic
 extra:
     initial: 500
     decay: 100
     minimum: 50
 
+image: .
+host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: http://yetictf.nstu.ru:4040/
+
 flags:
     - YetiCTF{1eV3l_ulTRa_H4ck3r}
-
-image: .
-host: ssh://root@proxy.leito.tech
-
-connection_info: https://yetictf.nstu.ru:4040/
 
 hints:
     - {
@@ -34,15 +30,7 @@ hints:
         content: "xmp -> xxe",
         cost: 30
     }
-    
-topics:
-    - Web
-    - XXE
 
-tags:
-    - web
-
-# hidden, visible.
 state: hidden
 
 version: "0.1"
