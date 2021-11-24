@@ -1,19 +1,14 @@
-__Category__: 
-* EasyCipher
+__Category__:
+* Crypto
 
-__Name__: 
-* NoName
+__Author__:
+* @Larr1
 
-__Description__: 
-* Что то очень знакомое... Думаю, ты справишься без моих подсказок)
+__Description__:
+Что то очень знакомое... Думаю, ты справишься без моих подсказок)
 
-__Files__:
-* flag.txt
-
-__Price__:
-* NaN
-
-__Flags__:
+__Flag__:
 * YetiCTF{Show_must_go_on}
 
-__Hints__:
+__Files__:
+* files/flag.txt

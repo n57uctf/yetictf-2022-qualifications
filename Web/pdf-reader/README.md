@@ -1,61 +1,36 @@
-# Info for YetiCTF developers
+## Category:
+* Web
 
-## Category
-
-```
-Web
-```
-
-## Name
-
-```
-Jokester
-```
-
-## Description
-
-```
+## Description:
 Мой друг долго не мог понять, что не так с pdf'кой с того сайта. АХАХАХ 
 /flag.txt
-<ссылка>
-```
 
-## Flag
-
-```
-YetiCTF{1eV3l_ulTRa_H4ck3r}
-```
+## Flag:
+* YetiCTF{1eV3l_ulTRa_H4ck3r}
 
 ## Hints
-
-```
 1. Где храниться метаданные в pdf файлах?
 2. Что за сущность такая?
 3. xmp -> xxe (Это на случай если никто не решит и до конца останеться 30 минут)
-```
 
-# Other useful info
+## TODO/Issues:
+* Crontab don't working in docker container. This can lead to out of storange, beacause all uploaded pdfs save in /tmp/pdfcache.
 
-## TODO/issues
+## Deploy:
+* `docker build -t jokester . && docker run -d -p 4040:4040 jokester`
+* `http://127.0.0.1:4040`
 
-Crontab don't working in docker container. This can lead to out of storange, beacause all uploaded pdfs save in /tmp/pdfcache.
+## Writeup:
 
-## Deploy
-
-```
-docker build -t flask/flask_docker .
-docker run -d -p 4040:4040 flask/flask_docker.
-```
-
-## Application
+### Application
 Web flask based python application for reverse pdf files (first page = last page and last page = first page).
 
-## Vulnerabulity
+### Vulnerabulity
 Application use pikepdf 2.9.2 lib. This lib vulnerable to xmp xxe in pdf file, while reading pdf metadata. When you loading pdf file, you can check: pdf version, page quantity, metadata(vuln). See more in exploit chapter.
 
-## Exploit
+### Exploit
 
-### Request
+#### Request
 
 ```
 POST / HTTP/1.1
@@ -122,7 +97,7 @@ startxref
 
 ```
 
-### Response
+#### Response
 
 ```
 HTTP/1.1 200 OK
