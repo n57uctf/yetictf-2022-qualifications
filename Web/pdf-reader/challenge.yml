@@ -1,8 +1,8 @@
 # Required sections
 name: "Jokester"
-author: ""
+author: "@amigo2208"
 category: web
-description: "Мой друг долго не мог понять, что не так с pdf'кой с того сайта. АХАХАХ<br>/flag.txt"
+description: "@amigo2208<br>Мой друг долго не мог понять, что не так с pdf'кой с того сайта. АХАХАХ<br>/flag.txt"
 value: 100
 type: dynamic
 
@@ -19,7 +19,7 @@ flags:
 image: .
 host: ssh://root@proxy.leito.tech
 
-# connection_info: nc proxy.leito.tech 502 
+connection_info: https://yetictf.nstu.ru:4040/
 
 hints:
     - {
