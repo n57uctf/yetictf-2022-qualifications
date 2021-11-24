@@ -1,0 +1,22 @@
+name: "Leaked password!"
+author: "@phalanger2412"
+category: osint
+description: "@phalanger2412<br>Кто-то взломал мой сайт и заменил всю информацию на мемы!! Чтобы все вернуть мне нужен пароль, помоги найти его!"
+value: 100
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+connection_info: https://yetictf.nstu.ru/GKues8dKFrXNaYm2OodLwsGYfNQ9wd2diC4u078Q+ss=
+
+flags:
+    - YetiCTF{hahaha_I_hack3d_y0ur_Web5it3!}
+
+hints:
+    - "Комментарии всегда интересно читать"
+    - "Гитхаб отличная вещь, не так ли?"
+
+version: "0.1"
