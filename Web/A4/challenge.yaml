@@ -1,7 +1,7 @@
 name: "A4"
 author: "@exe_cute"
 category: web
-description: "@exe_cute<br>" # TODO
+description: "@exe_cute<br>Я придумал универсальный способ получать данные с помощью запросов. Может стоить выкатить его как feature request для бибилиотек?"
 value: 100
 type: dynamic
 
@@ -13,6 +13,9 @@ extra:
 image: .
 host: ssh://cloud-admin@yetictf.nstu.ru
 connection_info: http://yetictf.nstu.ru:9999/
+
+files:
+    - app/app.py
 
 flags:
     - YetiCTF{ne_lublu_minecraft}
