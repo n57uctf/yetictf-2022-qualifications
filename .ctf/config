@@ -12,4 +12,7 @@ Hardware/modBUSFACTOR = Hardware/modBUSFACTOR
 Web/A4/ = Web/A4/
 Web/pdf-reader/ = Web/pdf-reader/
 Web/Cookie/ = Web/Cookie/
+OSINT/A.K.Doyle/ = OSINT/A.K.Doyle/
+OSINT/BobaLover/ = OSINT/BobaLover/
+OSINT/LeakedPassword/ = OSINT/LeakedPassword/
 
