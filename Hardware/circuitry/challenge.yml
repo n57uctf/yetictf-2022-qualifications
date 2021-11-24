@@ -1,17 +1,14 @@
-# Required sections
 name: "circuitry"
-author: "Larr1"
+author: "@Larr1"
 category: hardware
-description: "Каждый начинающий радиолюбитель собирал такую схему. Если даже не на этой микросхеме, то на транзисторах точно! Так что за это за микросхема? Узнайте ее название и сколько длиться высокий и низкий уровень сигнала(в мсек с округлением до целого). Формат флага: YetiCTF{name_timeUp_timeDown}"
+description: "@Larr1<br>Каждый начинающий радиолюбитель собирал такую схему. Если даже не на этой микросхеме, то на транзисторах точно! Так что за это за микросхема? Узнайте ее название и сколько длиться высокий и низкий уровень сигнала(в мсек с округлением до целого).<br>Формат флага: YetiCTF{name_timeUp_timeDown}"
 value: 100
 type: dynamic
 
-# Optional
-# Поля для dynamic
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 flags:
     - {
@@ -24,24 +21,16 @@ flags:
 hints:
     - {
         content: "Вы слышали об логических анализаторах уровня?",
-        cost: 10
+        cost: 31337
     }
     - {
         content: "Кто то сделал опечатку в имени файла. Что бы оно могло значить? ",
-        cost: 20
+        cost: 31337
     }
-    
-topics:
-    - Hardware
-    - SDR
-
-tags:
-    - hardware
 
 files:
     - files/scheme.jpg
 
-# hidden, visible.
 state: hidden
 
 version: "0.1"

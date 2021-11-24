@@ -6,9 +6,9 @@ value: 100
 type: dynamic
 
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 files:
     - files/img.JPG
@@ -17,7 +17,13 @@ flags:
     - YetiCTF{twitter_i$_b00ringggggg_101}
 
 hints:
-    - "Как оказалось в Твиттер можно искать по хэштегам"
-    - "Возможно стоит попробовать хэштег места, где купили напитки"
+    - {
+        content: "Как оказалось в Твиттер можно искать по хэштегам",
+        cost: 31337
+    }
+    - {
+        content: "Возможно стоит попробовать хэштег места, где купили напитки",
+        cost: 31337
+    }
 
 version: "0.1"

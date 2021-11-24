@@ -6,9 +6,9 @@ value: 100
 type: dynamic
 
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 flags:
     - YetiCTF{D0_u_w4nn4_c00k13s?}

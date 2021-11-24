@@ -6,9 +6,9 @@ value: 100
 type: dynamic
 
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 connection_info: https://yetictf.nstu.ru/GKues8dKFrXNaYm2OodLwsGYfNQ9wd2diC4u078Q+ss=
 
@@ -16,7 +16,13 @@ flags:
     - YetiCTF{hahaha_I_hack3d_y0ur_Web5it3!}
 
 hints:
-    - "Комментарии всегда интересно читать"
-    - "Гитхаб отличная вещь, не так ли?"
+    - {
+        content: "Комментарии всегда интересно читать",
+        cost: 31337
+    }
+    - {
+        content: "Гитхаб отличная вещь, не так ли?",
+        cost: 31337
+    }
 
 version: "0.1"

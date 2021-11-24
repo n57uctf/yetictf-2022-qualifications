@@ -1,17 +1,14 @@
-# Required sections
 name: "EasyCipher"
-author: "Larr1"
+author: "@Larr1"
 category: crypto
-description: "Что то очень знакомое... Думаю, ты справишься без моих подсказок)"
+description: "@Larr1<br>Что то очень знакомое... Думаю, ты справишься без моих подсказок)"
 value: 100
 type: dynamic
 
-# Optional
-# Поля для dynamic
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 flags:
     - YetiCTF{Show_must_go_on}

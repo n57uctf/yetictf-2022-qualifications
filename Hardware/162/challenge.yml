@@ -1,17 +1,14 @@
-# Required sections
 name: "162"
-author: "Larr1"
+author: "@Larr1"
 category: hardware
-description: "Очень странный файл. Что же это может быть? Много сигналов, не похоже что это какой то стандарт."
+description: "@Larr1<br>Очень странный файл. Что же это может быть? Много сигналов, не похоже что это какой то стандарт."
 value: 100
 type: dynamic
 
-# Optional
-# Поля для dynamic
 extra:
-    initial: 500
-    decay: 100
-    minimum: 50
+    initial: 1000
+    decay: 10
+    minimum: 100
 
 flags:
     - YetiCTF{LcD0k3Y}
@@ -19,24 +16,16 @@ flags:
 hints:
     - {
         content: "Вы слышали об логических анализаторах уровня?",
-        cost: 10
+        cost: 31337
     }
     - {
-        content: "Кто то сделал опечатку в имени файла. Что бы оно могло значить? ",
-        cost: 20
+        content: "Кто то сделал опечатку в имени файла. Что бы оно могло значить?",
+        cost: 31337
     }
-    
-topics:
-    - Hardware
-    - SDR
-
-tags:
-    - hardware
 
 files:
     - files/162.sal
 
-# hidden, visible.
 state: hidden
 
 version: "0.1"
