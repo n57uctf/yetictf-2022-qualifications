@@ -17,7 +17,7 @@ files:
     - files/MNIST_test_data.zip
     - files/anal-model-jit-script.pth
 
-__Hints__:
+hints:
     - {
         cost: 31337,
         content: "just check the model... and see which pictures is wrong... That's how tests do, isn't it?"
