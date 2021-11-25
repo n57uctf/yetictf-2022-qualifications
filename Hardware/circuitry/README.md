@@ -12,4 +12,4 @@ __Files__:
 * files/scheme.jpg
 
 __Flag__:
-* YetiCTF{NE555_523_270} (без учета регистра)
+* YetiCTF{NE555_523_253} (без учета регистра)
