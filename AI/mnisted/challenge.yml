@@ -1,4 +1,4 @@
-name: "Chess"
+name: "MNISTED"
 author: "@dantetemplar"
 category: crypto
 description: "[@dantetemplar](https://t.me/dantetemplar)<br><br>We trained the model especially for you, but the deadline was jamming us in the corner - so we didn't have time to check ...<br>BUT! Don't worry, we'll send you the test data ...<br><br>P.S.: mean, std = [0.1307, 0.3081]"
@@ -14,8 +14,8 @@ flags:
     - YetiCTF{i_hate_these_dataset_anomalies}
 
 files:
-    - files\MNIST_test_data.zip
-    - files\anal-model-jit-script.pth
+    - files/MNIST_test_data.zip
+    - files/anal-model-jit-script.pth
 
 __Hints__:
     - {
