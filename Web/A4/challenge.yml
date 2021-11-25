@@ -1,7 +1,7 @@
 name: "A4"
 author: "@exe_cute"
 category: web
-description: "@exe_cute<br>Я придумал универсальный способ получать данные с помощью запросов. Может стоить выкатить его как feature request для бибилиотек?"
+description: "[@exe_cute](https://t.me/exe_cute)<br><br>Я придумал универсальный способ получать данные с помощью запросов. Может стоить выкатить его как feature request для бибилиотек?"
 value: 100
 type: dynamic
 

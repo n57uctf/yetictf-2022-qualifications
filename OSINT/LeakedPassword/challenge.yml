@@ -1,7 +1,7 @@
 name: "Leaked password!"
 author: "@phalanger2412"
 category: osint
-description: "@phalanger2412<br>Кто-то взломал мой сайт и заменил всю информацию на мемы!! Чтобы все вернуть мне нужен пароль, помоги найти его!"
+description: "[@phalanger2412](https://t.me/phalanger2412)<br><br>Кто-то взломал мой сайт и заменил всю информацию на мемы!! Чтобы все вернуть мне нужен пароль, помоги найти его!"
 value: 100
 type: dynamic
 

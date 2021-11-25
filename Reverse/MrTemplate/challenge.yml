@@ -4,7 +4,7 @@ author: "@myNameIsK1r4"
 
 category: Reverse
 
-description: "Наш программист уволился раньше времени и не дописал программу SimpleCalculator. С виду всё должно работать, но почему-то ничего не собирается. Сможешь исправить эту непонятную ошибку?<br>Флаг представляет собой одну дописанную строчку. EXAMPLE: YetiCTF{void SimpleCalculator<T>::setNum2(T num);"
+description: "Наш программист уволился раньше времени и не дописал программу SimpleCalculator. С виду всё должно работать, но почему-то ничего не собирается. Сможешь исправить эту непонятную ошибку?<br><br>Флаг представляет собой одну дописанную строчку. EXAMPLE: YetiCTF{void SimpleCalculator<T>::setNum2(T num);"
 
 value: 100
 type: dynamic
