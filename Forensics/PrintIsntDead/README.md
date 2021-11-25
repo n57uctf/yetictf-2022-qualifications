@@ -2,7 +2,7 @@ __Category__:
 * Forensics
 
 __Author__: 
-* @RegularITCat
+* @slyshay6
 
 __Description__: 
 Всё просто: ты, дамп трафика и конфиденциональная информация. Добро пожаловать!

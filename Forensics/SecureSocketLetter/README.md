@@ -2,7 +2,7 @@ __Category__:
 * Forensics
 
 __Author__: 
-* @RegularITCat
+* @slyshay6
 
 __Description__: 
 Этот парень был уверен в защищенности SSL...
