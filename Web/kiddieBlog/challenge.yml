@@ -15,7 +15,7 @@ flags:
 
 image: .
 host: ssh://cloud-admin@yetictf.nstu.ru
-connection_info: nc yetictf.nstu.ru 502
+connection_info: http://yetictf.nstu.ru:8081/
 
 hints:
     - {
