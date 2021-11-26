@@ -4,7 +4,7 @@ __Category__:
 __Author__: 
 * @Dinobugaini
 
-__Description__: 
+__Description__: Нечестный рандомайзер. Интересно, какую скрытую функцию создал для себя админ?
 
 
 __Flag__:
