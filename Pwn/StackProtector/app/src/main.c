@@ -7,8 +7,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-#define DEV_RANDOM "/dev/random"
-#define FLAG_FILE  "/flag.txt"
+#define FLAG_FILE  "flag.txt"
 
 #define BUFSIZE 64
 
@@ -39,29 +38,9 @@ ret:
 	exit(0);
 }
 
-int stack_protector_init()
+void stack_protector_init()
 {
-	int ret = -1;
-
-	int fd = open(DEV_RANDOM, O_RDONLY);
-	if (-1 == fd)
-	{
-		printf("open '%s' failed: %s\n", DEV_RANDOM, strerror(errno));
-		return ret;
-	}
-
-	int rc = read(fd, &stack_protector, sizeof(unsigned int));
-	if ((-1 == rc) || (rc > sizeof(unsigned int)))
-	{
-		printf("read failed: %s\n", strerror(errno));
-		goto error;
-	}
-
-	ret = 0;
-
-error:
-	close(fd);
-	return ret;
+	stack_protector = rand() % (0xffffffff - 0x10000000) + 0x10000000;
 }
 
 int invade()
@@ -74,19 +53,19 @@ int invade()
 
 	if (!gets(name))
 	{
-		printf("fgets failed\n");
+		printf("gets failed\n");
 		return -1;
 	}
 
-	printf("Hello, "); printf(name);
+	printf("Hello, %s\n", name);
 
 	if (protector != stack_protector)
 	{
-		printf("\nYou won't go further!\n");
+		printf("You won't go further!\n");
 		exit(0);
 	}
 
-	printf("\nWelcome!\n");
+	printf("Welcome!\n");
 
 	return 0;
 }
@@ -96,11 +75,7 @@ int main(int argc, char ** argv)
 	setvbuf(stdin, NULL, _IONBF, 0);
 	setvbuf(stdout, NULL, _IONBF, 0);
 
-	if (stack_protector_init())
-	{
-		printf("stack_protector_init failed\n");
-		return -1;
-	}
+	stack_protector_init();
 
 	if (invade())
 	{
