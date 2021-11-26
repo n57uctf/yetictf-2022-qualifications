@@ -1,6 +1,5 @@
 FROM ubuntu
-RUN apt update -y
-RUN apt install -y tcpd xinetd make gcc gcc-multilib
+RUN apt update -y && apt install -y tcpd xinetd make gcc gcc-multilib
 RUN useradd stack_protector
 COPY ./app/stack-protector-config /etc/xinetd.d/stack_protector
 COPY ./app/src/main.c /main.c
