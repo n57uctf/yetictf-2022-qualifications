@@ -1,0 +1,10 @@
+service mynetd
+{
+	disable = no
+	type = UNLISTED
+	socket_type = stream
+	port = 18181
+	wait = no
+	user = stack_protector
+	server = /stack_protector
+}

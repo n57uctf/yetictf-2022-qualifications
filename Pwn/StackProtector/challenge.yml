@@ -1,0 +1,27 @@
+name: "Stack Protector"
+
+author: "@bigger777"
+
+category: Pwn
+
+description: "Сможешь обойти защиту?"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+image: .
+
+host: ssh://cloud-admin@yetictf.nstu.ru
+
+files:
+    - files/stack_protector
+
+flags:
+    - YetiCTF{1_d3f34t3d_th3_gu4rd}
+
+version: "0.1"
