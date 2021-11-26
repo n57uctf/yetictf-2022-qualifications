@@ -1,7 +1,7 @@
 name: "SecureSocketLetter"
 author: "@slyshay6"
 category: forensics
-description: "[@slyshay6](https://t.me/slyshay6)<br><br>Этот парень был уверен в защищенности SSL..."
+description: "[@slyshay6](https://t.me/slyshay6)<br><br>Киберполиция взяла подозреваемого в ботнетоводстве, но он вайпнул все до их прибытия. У наших инженеров, которые вели за ним киберслежку, остался дамп трафика с его сети. Они утверждают, что угроза миновала, хотя я сомневаюсь в их словах."
 value: 100
 type: dynamic
 
