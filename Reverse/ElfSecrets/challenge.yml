@@ -2,7 +2,7 @@ name: "Elfs secret"
 
 author: "@bigger777"
 
-category: Reverse
+category: reverse
 
 description: "[@bigger777](https://t.me/bigger777)<br><br>Разгадай секрет эльфов"
 
@@ -15,8 +15,8 @@ extra:
     minimum: 100
 
 image: .
-
 host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: nc yetictf.nstu.ru 8888
 
 files:
     - files/front
