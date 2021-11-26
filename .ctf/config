@@ -4,6 +4,8 @@ access_token =
 
 [challenges]
 Crypto/EasyCipher = Crypto/EasyCipher
+Crypto/BlackBox/ = Crypto/BlackBox/
+Crypto/Chess/ = Crypto/Chess/
 Forensics/PrintIsntDead = Forensics/PrintIsntDead
 Forensics/SecureSocketLetter = Forensics/SecureSocketLetter
 Hardware/162 = Hardware/162
@@ -12,9 +14,14 @@ Hardware/BUSfactor = Hardware/BUSfactor
 Web/A4/ = Web/A4/
 Web/jokester/ = Web/jokester/
 Web/Cookie/ = Web/Cookie/
+Web/kiddieBlog/ = Web/kiddieBlog/
 OSINT/A.K.Doyle/ = OSINT/A.K.Doyle/
 OSINT/BobaLover/ = OSINT/BobaLover/
 OSINT/LeakedPassword/ = OSINT/LeakedPassword/
-Crypto/BlackBox/ = Crypto/BlackBox/
-Crypto/Chess/ = Crypto/Chess/
 AI/mnisted = AI/mnisted
+Reverse/ElfSecrets = Reverse/ElfSecrets
+Reverse/Hardest = Reverse/Hardest
+Reverse/HT1337 = Reverse/HT1337
+Reverse/MrAgent = Reverse/MrAgent
+Reverse/MrTemplate = Reverse/MrTemplate
+Pwn/StackProtector = Pwn/StackProtector

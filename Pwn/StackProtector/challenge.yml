@@ -4,7 +4,7 @@ author: "@bigger777"
 
 category: Pwn
 
-description: "Сможешь обойти защиту?"
+description: "[@bigger777](https://t.me/bigger777)<br><br>Сможешь обойти защиту?"
 
 value: 100
 type: dynamic
@@ -15,8 +15,8 @@ extra:
     minimum: 100
 
 image: .
-
 host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: nc yetictf.nstu.ru 18181
 
 files:
     - files/stack_protector

@@ -2,9 +2,9 @@ name: "MrAgent"
 
 author: "@bigger777"
 
-category: Reverse
+category: reverse
 
-description: "Наш вирусолог по ошибке запустил один из своих экземпляров на своей системе. Помоги бедолаге вернуть его труды."
+description: "[@bigger777](https://t.me/bigger777)<br><br>Наш вирусолог по ошибке запустил один из своих экземпляров на своей системе. Помоги бедолаге вернуть его труды."
 
 value: 100
 type: dynamic
