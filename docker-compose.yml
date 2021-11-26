@@ -3,7 +3,7 @@ version: "3.3"
 services:
   blackbox:
     build: Crypto/BlackBox/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.125
@@ -15,7 +15,7 @@ services:
       - "crypto"
   a4:
     build: Web/A4/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.25
@@ -27,7 +27,7 @@ services:
       - "web"
   cookie:
     build: Web/Cookie/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.25
@@ -39,7 +39,7 @@ services:
       - "web"
   jokester:
     build: Web/jokester/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.25
@@ -51,7 +51,7 @@ services:
       - "web"
   kiddieblog:
     build: Web/kiddieBlog/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.25
@@ -63,7 +63,7 @@ services:
       - "web"
   elfsecrets:
     build: Reverse/ElfSecrets/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.125
@@ -75,7 +75,7 @@ services:
       - "reverse"
   stackprotector:
     build: Pwn/StackProtector/.
-    deploy
+    deploy:
       resources:
         limits:
           cpus: 0.125
