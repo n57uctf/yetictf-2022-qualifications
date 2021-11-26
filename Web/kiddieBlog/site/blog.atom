@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
+  <id>https://example.com/</id>
+  <title>Example Site</title>
+  
+  <updated>2021-11-22T00:00:00Z</updated>
+  
+  <author><name>Your Name</name></author>
+  <link href="https://example.com/" rel="alternate"></link>
+  <generator uri="https://github.com/piranha/gostatic">gostatic</generator>
+
+
+
+<entry>
+  <id>blog/imtiredimleave/</id>
+  <author><name>Your Name</name></author>
+  <title type="html">Tired</title>
+  <published>2021-11-22T00:00:00Z</published>
+  
+  <category term="blog"></category>
+  
+  <link href="https://example.com//blog/imtiredimleave/" rel="alternate"></link>
+  <content type="html">
+    
+    
+      
+  &lt;h2 id=&#34;i-m-tired-developing-this-blog-i-leave&#34;&gt;i m tired developing this blog, i leave&amp;hellip;&amp;hellip;.&lt;/h2&gt;
+&lt;h2 id=&#34;but-i-have-placed-easter-egg-for-hackers-from-future&#34;&gt;but i have placed easter egg for hackers from future!&lt;/h2&gt;
+&lt;h2 id=&#34;search-at-easteregg&#34;&gt;search at /easterEgg/&lt;/h2&gt;
+
+  
+    
+  </content>
+</entry>
+
+<entry>
+  <id>blog/stuxnet/</id>
+  <author><name>Your Name</name></author>
+  <title type="html">didUHearAboutStuxnet?</title>
+  <published>2021-11-21T00:00:00Z</published>
+  
+  <category term="security"></category>
+  
+  <link href="https://example.com//blog/stuxnet/" rel="alternate"></link>
+  <content type="html">
+    
+    
+      
+  &lt;h2 id=&#34;how-da-hell-they-hacked-plcs&#34;&gt;how da hell they hacked plc&amp;rsquo;s&lt;/h2&gt;
+&lt;p&gt;and why Iran use siemens for something like nuclear programm??&lt;/p&gt;
+&lt;p&gt;i definitely go and make my own plc&lt;/p&gt;
+&lt;p&gt;because everyone around gonna try to harm me, if they know that i develop YADERNAYA ROKETA&lt;/p&gt;
+
+  
+    
+  </content>
+</entry>
+
+<entry>
+  <id>blog/zshLovers/</id>
+  <author><name>Your Name</name></author>
+  <title type="html">zshLovers</title>
+  <published>2021-11-20T00:00:00Z</published>
+  
+  <category term="blog"></category>
+  
+  <link href="https://example.com//blog/zshLovers/" rel="alternate"></link>
+  <content type="html">
+    
+    
+      
+  &lt;h2 id=&#34;hey-there&#34;&gt;hey there&lt;/h2&gt;
+&lt;p&gt;i would like to advertise zsh lovers&lt;/p&gt;
+&lt;p&gt;hxxps //grml.org/zsh/zsh-lovers html&lt;/p&gt;
+&lt;p&gt;it&amp;rsquo;s amazing!!!&lt;/p&gt;
+
+  
+    
+  </content>
+</entry>
+
+<entry>
+  <id>blog/letsMineWithGithubCICD/</id>
+  <author><name>Your Name</name></author>
+  <title type="html">LetsMineWithGithubCICD</title>
+  <published>2021-11-19T00:00:00Z</published>
+  
+  <category term="funny"></category>
+  
+  <link href="https://example.com//blog/letsMineWithGithubCICD/" rel="alternate"></link>
+  <content type="html">
+    
+    
+      
+  &lt;h2 id=&#34;hi-again&#34;&gt;hi again!!&lt;/h2&gt;
+&lt;p&gt;do u tried to mine with cicd?&lt;/p&gt;
+&lt;p&gt;i have an idea to mine with github or maybe gitlab cicd process&lt;/p&gt;
+&lt;p&gt;prefer github because microsoft&lt;/p&gt;
+
+  
+    
+  </content>
+</entry>
+
+<entry>
+  <id>blog/signatures/</id>
+  <author><name>Your Name</name></author>
+  <title type="html">signatures</title>
+  <published>2021-11-18T00:00:00Z</published>
+  
+  <category term="security"></category>
+  
+  <link href="https://example.com//blog/signatures/" rel="alternate"></link>
+  <content type="html">
+    
+    
+      
+  &lt;h2 id=&#34;did-someone-use-byte-jump-when-writing-signature&#34;&gt;did someone use byte jump when writing signature?&lt;/h2&gt;
+&lt;p&gt;how efficient dat?&lt;/p&gt;
+
+  
+    
+  </content>
+</entry>
+
+
+</feed>

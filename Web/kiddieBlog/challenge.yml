@@ -1,0 +1,36 @@
+name: "BUSfactor"
+author: "@RegularITCat"
+category: hardware
+description: "[@RegularITCat](https://t.me/RegularITCat)<br><br>Еу!<br><br>чек ит аут, очередной скрипт кидди, думающий что он крутой хакер, сделал свой блог. Как думаешь, расковыряем?"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{damn_br0_wanna_hackThingsWithMeX}
+
+image: .
+host: ssh://cloud-admin@yetictf.nstu.ru
+connection_info: nc yetictf.nstu.ru 502
+
+hints:
+    - {
+        content: "О, Апач, норм.",
+        cost: 31337
+    }
+    - {
+        content: "Ну и дичь он конечно пишет... Хотя, пост Tired интересный",
+        cost: 31337
+    }
+    - {
+        content: "Зачекайка свеженькие proof of concept",
+        cost: 31337
+    }
+
+state: hidden
+
+version: "0.1"
