@@ -1,0 +1,29 @@
+name: "Near"
+
+author: "@bigger777"
+
+category: Pwn
+
+description: "Оно рядом."
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+image: .
+
+host: ssh://cloud-admin@yetictf.nstu.ru
+
+connection_info: nc yetictf.nstu.ru 20201
+
+files:
+    - files/near
+
+flags:
+    - YetiCTF{1t_15_n34r_but_n0t}
+
+version: "0.1"
