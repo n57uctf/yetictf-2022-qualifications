@@ -170,6 +170,9 @@ static int8_t start_game(
 
 int main(int argc, char ** argv)
 {
+	setvbuf(stdin, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0);
+
 	file_data_t flag = {.data = NULL, .size = 0};
 
 	int8_t rc = get_file_data(FLAG_FILE, &flag);
