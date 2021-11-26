@@ -1,6 +1,5 @@
 FROM ubuntu
-RUN apt update -y
-RUN apt install -y tcpd xinetd
+RUN apt update -y && apt install -y tcpd xinetd
 RUN useradd elf
 COPY app/elf-server-config /etc/xinetd.d/elf-server
 COPY app/bin/elf-server /elf-server

@@ -18,6 +18,8 @@ image: .
 host: ssh://cloud-admin@yetictf.nstu.ru
 connection_info: nc yetictf.nstu.ru 18181
 
+connection_info: nc yetictf.nstu.ru 18181
+
 files:
     - files/stack_protector
 
