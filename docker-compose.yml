@@ -1,0 +1,80 @@
+version: "3.3"
+
+services:
+  blackbox:
+    build: Crypto/BlackBox/.
+    resources:
+      limits:
+        cpus: 0.125
+        memory: 512m
+    restart: always
+    ports:
+      - "1117:1117"
+    labels:
+      - "crypto"
+  a4:
+    build: Web/A4/.
+    resources:
+      limits:
+        cpus: 0.25
+        memory: 1024m
+    restart: always
+    ports:
+      - "9999:9999"
+    labels:
+      - "web"
+  cookie:
+    build: Web/Cookie/.
+    resources:
+      limits:
+        cpus: 0.25
+        memory: 1024m
+    restart: always
+    ports:
+      - "8080:8080"
+    labels:
+      - "web"
+  jokester:
+    build: Web/jokester/.
+    resources:
+      limits:
+        cpus: 0.25
+        memory: 1024m
+    restart: always
+    ports:
+      - "4040:4040"
+    labels:
+      - "web"
+  kiddieblog:
+    build: Web/kiddieBlog/.
+    resources:
+      limits:
+        cpus: 0.25
+        memory: 1024m
+    restart: always
+    ports:
+      - "8081:8081"
+    labels:
+      - "web"
+  elfsecrets:
+    build: Reverse/ElfSecrets/.
+    resources:
+      limits:
+        cpus: 0.125
+        memory: 512m
+    restart: always
+    ports:
+      - "8888:8888"
+    labels:
+      - "reverse"
+  stackprotector:
+    build: Pwn/StackProtector/.
+    resources:
+      limits:
+        cpus: 0.125
+        memory: 512m
+    restart: always
+    ports:
+      - "18181:18181"
+    labels:
+      - "pwn"
