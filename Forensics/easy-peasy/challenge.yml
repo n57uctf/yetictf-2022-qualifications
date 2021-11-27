@@ -11,7 +11,7 @@ extra:
     minimum: 100
 
 flags:
-    - YetiCTF{y371_l0v3_blu37007h_pr070c0l}
+    - YetiCTF{y371_l0v_blu37007h_pr070c0l}
 
 files:
     - files/easy-peasy.zip
