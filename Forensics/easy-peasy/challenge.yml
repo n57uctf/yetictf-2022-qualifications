@@ -1,0 +1,21 @@
+name: "easy-peasy"
+author: "@Cilectiy"
+category: forensics
+description: "[@Cilectiy](https://t.me/cilectiy)<br><br>С китая пришла посылка. Внутри послание от ком. партии Китая. Что же они хотели этим сказать?"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{y371_l0v3_blu37007h_pr070c0l}
+
+files:
+    - files/easy-peasy.zip
+
+state: hidden
+
+version: "0.1"
