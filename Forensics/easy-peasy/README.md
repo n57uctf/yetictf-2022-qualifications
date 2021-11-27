@@ -8,7 +8,7 @@ __Description__:
 С китая пришла посылка. Внутри послание от ком. партии Китая. Что же они хотели этим сказать?
 
 __Flag__:
-* YetiCTF{y371_l0v3_blu37007h_pr070c0l}
+* YetiCTF{y371_l0v_blu37007h_pr070c0l}
 
 __Files__:
 * files/easy-peasy.zip
